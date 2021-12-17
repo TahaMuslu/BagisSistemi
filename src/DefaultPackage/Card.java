@@ -3,7 +3,7 @@ package DefaultPackage;
 
 public class Card {
 	
-	private int cardId;
+	//private int cardId;
 	private int IbanNumber;
 	private int cardNumber;
 	private String expDate;

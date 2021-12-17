@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="400.0">
+         <children>
+            <Label layoutX="155.0" layoutY="27.0" text="Kayıt Ol">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="92.0" text="Kullanıcı türü seçiniz" />
+            <TextField layoutX="170.0" layoutY="140.0" />
+            <TextField layoutX="170.0" layoutY="180.0" />
+            <TextField layoutX="170.0" layoutY="220.0" />
+            <Label layoutX="50.0" layoutY="140.0" text="Ad Soyad">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="180.0" text="E-mail">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="220.0" text="Telefon">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="260.0" text="Adres">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="325.0" text="Şifre">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="365.0" text="Şifre Tekrar">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <PasswordField layoutX="170.0" layoutY="325.0" />
+            <PasswordField layoutX="170.0" layoutY="365.0" />
+            <TextArea layoutX="170.0" layoutY="260.0" prefHeight="51.0" prefWidth="150.0" />
+            <RadioButton layoutX="160.0" layoutY="92.0" mnemonicParsing="false" text="Bağışçı" />
+            <RadioButton layoutX="260.0" layoutY="92.0" mnemonicParsing="false" text="İhtiyaç Sahibi" />
+            <Button layoutX="216.0" layoutY="438.0" mnemonicParsing="false" text="Kayıt Ol" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
