@@ -21,13 +21,13 @@
             <Label layoutX="112.0" layoutY="172.0" prefHeight="18.0" prefWidth="29.0" text="Şifre" />
             <PasswordField layoutX="182.0" layoutY="169.0" />
             <TextField layoutX="182.0" layoutY="137.0" />
-            <Button layoutX="225.0" layoutY="221.0" mnemonicParsing="false" text="Giriş Yap" />
+            <Button fx:id="loginBtn" layoutX="225.0" layoutY="221.0" mnemonicParsing="false" onMouseClicked="#loginBtnClick" text="Giriş Yap" />
             <Label layoutX="27.0" layoutY="345.0" text="Hesabınız yoksa">
                <font>
                   <Font size="10.0" />
                </font>
             </Label>
-            <Hyperlink fx:id="hyplink" alignment="CENTER" layoutX="97.0" layoutY="342.5" onMouseEntered="#hyplinkUnderlineT" onMouseExited="#hyplinkUnderlineF" prefHeight="4.0" prefWidth="50.0" text="Kaydolun">
+            <Hyperlink fx:id="hyplink" alignment="CENTER" layoutX="97.0" layoutY="342.5" onMouseClicked="#hyplinkClick" onMouseEntered="#hyplinkUnderlineT" onMouseExited="#hyplinkUnderlineF" prefHeight="4.0" prefWidth="50.0" text="kaydolun">
                <font>
                   <Font size="10.0" />
                </font>

@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="GUI.InNeedRequestScreenController">
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.InNeedRequestScreenController">
    <children>
       <AnchorPane prefHeight="300.0" prefWidth="400.0">
          <children>
@@ -23,8 +22,8 @@
             <TextField layoutX="150.0" layoutY="100.0" />
             <TextArea layoutX="149.0" layoutY="132.0" prefHeight="62.0" prefWidth="150.0" />
             <Label layoutX="53.0" layoutY="132.0" text="Açıklama" />
-            <Button layoutX="183.0" layoutY="206.0" mnemonicParsing="false" text="İstek Oluştur" />
-            <Button layoutX="277.0" layoutY="251.0" mnemonicParsing="false" text="Ana Menüye Dön" />
+            <Button fx:id="istek" layoutX="183.0" layoutY="206.0" mnemonicParsing="false" onMouseClicked="#istekClick" text="İstek Oluştur" />
+            <Button fx:id="menu" layoutX="277.0" layoutY="251.0" mnemonicParsing="false" onMouseClicked="#menuClick" text="Ana Menüye Dön" />
          </children>
       </AnchorPane>
    </children>

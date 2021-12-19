@@ -7,8 +7,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-public class DonationPoolScreenController {
+public class RequestsScreenController {
 
+	
 	@FXML
 	private Button menu;
 	
@@ -17,5 +18,4 @@ public class DonationPoolScreenController {
 		Stage window = (Stage) menu.getScene().getWindow();
 		window.setScene(new Scene(root, 500, 400));
 	}
-	
 }

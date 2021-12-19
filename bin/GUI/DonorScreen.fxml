@@ -5,8 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="GUI.DonorScreenController">
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.DonorScreenController">
    <children>
       <AnchorPane prefHeight="300.0" prefWidth="500.0">
          <children>
@@ -20,10 +19,10 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Button layoutX="70.0" layoutY="124.0" mnemonicParsing="false" text="Bağış Yap" />
-            <Button layoutX="360.0" layoutY="124.0" mnemonicParsing="false" text="Kart Ekle" />
-            <Button layoutX="170.0" layoutY="124.0" mnemonicParsing="false" text="Yapılan Bağışları Görüntüle" />
-            <Button layoutX="217.0" layoutY="240.0" mnemonicParsing="false" text="Çıkış Yap" />
+            <Button fx:id="bagisYap" layoutX="70.0" layoutY="124.0" mnemonicParsing="false" onMouseClicked="#bagisYap" text="Bağış Yap" />
+            <Button fx:id="kart" layoutX="360.0" layoutY="124.0" mnemonicParsing="false" onMouseClicked="#kartEkle" text="Kart Ekle" />
+            <Button fx:id="bagisGör" layoutX="170.0" layoutY="124.0" mnemonicParsing="false" onMouseClicked="#bagisGör" text="Yapılan Bağışları Görüntüle" />
+            <Button fx:id="cikis" layoutX="217.0" layoutY="240.0" mnemonicParsing="false" onMouseClicked="#cikisYap" text="Çıkış Yap" />
          </children>
       </AnchorPane>
    </children>

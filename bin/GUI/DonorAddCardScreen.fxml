@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="GUI.DonorAddCardScreenController">
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.DonorAddCardScreenController">
    <children>
       <AnchorPane prefHeight="250.0" prefWidth="400.0">
          <children>
@@ -18,11 +17,12 @@
             </Label>
             <Label layoutX="35.0" layoutY="69.0" text="Kart Numarası" />
             <Label layoutX="35.0" layoutY="149.0" text="CVV" />
-            <Label layoutX="35.0" layoutY="109.0" text="Son Kullanam Tarihi" />
+            <Label layoutX="35.0" layoutY="109.0" text="Son Kullanma Tarihi" />
             <TextField layoutX="150.0" layoutY="65.0" prefHeight="26.0" prefWidth="130.0" />
             <TextField layoutX="150.0" layoutY="105.0" prefHeight="26.0" prefWidth="130.0" />
             <TextField layoutX="150.0" layoutY="145.0" prefHeight="26.0" prefWidth="130.0" />
-            <Button layoutX="184.0" layoutY="184.0" mnemonicParsing="false" text="Kart Ekle" />
+            <Button fx:id="kartEkle" layoutX="184.0" layoutY="184.0" mnemonicParsing="false" onMouseClicked="#menuClick" text="Kart Ekle" />
+            <Button fx:id="menu" layoutX="280.0" layoutY="210.0" mnemonicParsing="false" onMouseClicked="#menuClick" text="Ana Menüye Dön" />
          </children>
       </AnchorPane>
    </children>

@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17">
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.SignUpScreenController">
    <children>
       <AnchorPane prefHeight="500.0" prefWidth="400.0">
          <children>
@@ -56,9 +55,9 @@
             <PasswordField layoutX="170.0" layoutY="325.0" />
             <PasswordField layoutX="170.0" layoutY="365.0" />
             <TextArea layoutX="170.0" layoutY="260.0" prefHeight="51.0" prefWidth="150.0" />
-            <RadioButton layoutX="160.0" layoutY="92.0" mnemonicParsing="false" text="Bağışçı" />
-            <RadioButton layoutX="260.0" layoutY="92.0" mnemonicParsing="false" text="İhtiyaç Sahibi" />
-            <Button layoutX="216.0" layoutY="438.0" mnemonicParsing="false" text="Kayıt Ol" />
+            <RadioButton fx:id="bagisci" layoutX="160.0" layoutY="92.0" mnemonicParsing="false" onMouseClicked="#bagisciClick" text="Bağışçı" />
+            <RadioButton fx:id="ihtiyac" layoutX="260.0" layoutY="92.0" mnemonicParsing="false" onMouseClicked="#ihtiyacClick" text="İhtiyaç Sahibi" />
+            <Button fx:id="btn" layoutX="216.0" layoutY="438.0" mnemonicParsing="false" onMouseClicked="#btnClick" text="Kayıt Ol" />
          </children>
       </AnchorPane>
    </children>

@@ -5,8 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="GUI.AdminScreenController">
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AdminScreenController">
    <children>
       <AnchorPane prefHeight="400.0" prefWidth="500.0">
          <children>
@@ -20,10 +19,10 @@
                   <Font name="System Bold" size="16.0" />
                </font>
             </Label>
-            <Button layoutX="206.0" layoutY="175.0" mnemonicParsing="false" text="Bağış Havuzu" />
-            <Button layoutX="22.0" layoutY="175.0" mnemonicParsing="false" text="Yardım İstekleri Görüntüle" />
-            <Button layoutX="321.0" layoutY="175.0" mnemonicParsing="false" text="Yapılan Bağışları Görüntüle" />
-            <Button layoutX="415.0" layoutY="345.0" mnemonicParsing="false" text="Çıkış Yap" />
+            <Button fx:id="havuz" layoutX="206.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#havuzClick" text="Bağış Havuzu" />
+            <Button fx:id="yardim" layoutX="22.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#yardimClick" text="Yardım İstekleri Görüntüle" />
+            <Button fx:id="bagis" layoutX="321.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#bagisClick" text="Yapılan Bağışları Görüntüle" />
+            <Button fx:id="cikis" layoutX="415.0" layoutY="345.0" mnemonicParsing="false" onMouseClicked="#cikisYap" text="Çıkış Yap" />
          </children>
       </AnchorPane>
    </children>

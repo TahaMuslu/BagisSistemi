@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="GUI.DonateScreenController">
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.DonateScreenController">
    <children>
       <AnchorPane prefHeight="300.0" prefWidth="400.0">
          <children>
@@ -27,8 +26,8 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <Button layoutX="166.0" layoutY="168.0" mnemonicParsing="false" text="Bağış Yap" />
-            <Button layoutX="322.0" layoutY="247.0" mnemonicParsing="false" text="Geri Dön" />
+            <Button fx:id="bagis" layoutX="166.0" layoutY="168.0" mnemonicParsing="false" onMouseClicked="#bagisClick" text="Bağış Yap" />
+            <Button fx:id="menu" layoutX="275.0" layoutY="246.0" mnemonicParsing="false" onMouseClicked="#menuClick" text="Ana Menüye Dön" />
          </children>
       </AnchorPane>
    </children>
