@@ -18,12 +18,14 @@
             </Label>
             <Label layoutX="53.0" layoutY="75.0" text="IBAN" />
             <Label layoutX="53.0" layoutY="104.0" text="Yardım Tipi" />
-            <TextField layoutX="150.0" layoutY="71.0" />
-            <TextField layoutX="150.0" layoutY="100.0" />
-            <TextArea layoutX="149.0" layoutY="132.0" prefHeight="62.0" prefWidth="150.0" />
+            <TextField fx:id="iban" layoutX="150.0" layoutY="70.0" />
+            <TextField fx:id="yardimTipi" layoutX="150.0" layoutY="100.0" />
+            <TextArea fx:id="aciklama" layoutX="150.0" layoutY="130.0" prefHeight="62.0" prefWidth="150.0" />
             <Label layoutX="53.0" layoutY="132.0" text="Açıklama" />
-            <Button fx:id="istek" layoutX="183.0" layoutY="206.0" mnemonicParsing="false" onMouseClicked="#istekClick" text="İstek Oluştur" />
+            <Button fx:id="istek" layoutX="182.0" layoutY="238.0" mnemonicParsing="false" onMouseClicked="#istekClick" text="İstek Oluştur" />
             <Button fx:id="menu" layoutX="277.0" layoutY="251.0" mnemonicParsing="false" onMouseClicked="#menuClick" text="Ana Menüye Dön" />
+            <Label layoutX="53.0" layoutY="201.0" text="Miktar" />
+            <TextField fx:id="miktar" layoutX="150.0" layoutY="197.0" />
          </children>
       </AnchorPane>
    </children>

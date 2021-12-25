@@ -7,14 +7,14 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.DonationPoolScreenController">
    <children>
-      <AnchorPane prefHeight="250.0" prefWidth="350.0">
+      <AnchorPane onMouseEntered="#labelText" onMouseExited="#labelText" prefHeight="250.0" prefWidth="350.0">
          <children>
             <Label layoutX="37.0" layoutY="32.0" text="Anlık Para Havuzundaki Para Miktarı">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="108.0" layoutY="73.0" prefHeight="26.0" prefWidth="134.0" text="Label">
+            <Label fx:id="label" alignment="CENTER" layoutX="108.0" layoutY="73.0" prefHeight="26.0" prefWidth="134.0">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>

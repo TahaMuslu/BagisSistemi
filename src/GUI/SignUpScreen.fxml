@@ -19,9 +19,9 @@
                </font>
             </Label>
             <Label layoutX="20.0" layoutY="92.0" text="Kullanıcı türü seçiniz" />
-            <TextField layoutX="170.0" layoutY="140.0" />
-            <TextField layoutX="170.0" layoutY="180.0" />
-            <TextField layoutX="170.0" layoutY="220.0" />
+            <TextField fx:id="ad" layoutX="170.0" layoutY="140.0" />
+            <TextField fx:id="email" layoutX="170.0" layoutY="180.0" />
+            <TextField fx:id="telefon" layoutX="170.0" layoutY="220.0" />
             <Label layoutX="50.0" layoutY="140.0" text="Ad Soyad">
                <font>
                   <Font size="13.0" />
@@ -52,9 +52,9 @@
                   <Font size="13.0" />
                </font>
             </Label>
-            <PasswordField layoutX="170.0" layoutY="325.0" />
-            <PasswordField layoutX="170.0" layoutY="365.0" />
-            <TextArea layoutX="170.0" layoutY="260.0" prefHeight="51.0" prefWidth="150.0" />
+            <PasswordField fx:id="sifre" layoutX="170.0" layoutY="325.0" />
+            <PasswordField fx:id="sifreTekrar" layoutX="170.0" layoutY="365.0" />
+            <TextArea fx:id="adres" layoutX="170.0" layoutY="260.0" prefHeight="51.0" prefWidth="150.0" />
             <RadioButton fx:id="bagisci" layoutX="160.0" layoutY="92.0" mnemonicParsing="false" onMouseClicked="#bagisciClick" text="Bağışçı" />
             <RadioButton fx:id="ihtiyac" layoutX="260.0" layoutY="92.0" mnemonicParsing="false" onMouseClicked="#ihtiyacClick" text="İhtiyaç Sahibi" />
             <Button fx:id="btn" layoutX="216.0" layoutY="438.0" mnemonicParsing="false" onMouseClicked="#btnClick" text="Kayıt Ol" />

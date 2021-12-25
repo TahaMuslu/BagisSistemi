@@ -7,14 +7,14 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AdminScreenController">
    <children>
-      <AnchorPane prefHeight="400.0" prefWidth="500.0">
+      <AnchorPane onMouseEntered="#labelText" onMouseExited="#labelText" prefHeight="400.0" prefWidth="500.0">
          <children>
             <Label layoutX="213.0" layoutY="14.0" text="İyi Günler">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
             </Label>
-            <Label layoutX="230.0" layoutY="40.0" text="Label">
+            <Label fx:id="label" layoutX="230.0" layoutY="40.0" text="Label">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
