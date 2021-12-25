@@ -26,6 +26,7 @@
             <Button fx:id="menu" layoutX="277.0" layoutY="251.0" mnemonicParsing="false" onMouseClicked="#menuClick" text="Ana Menüye Dön" />
             <Label layoutX="53.0" layoutY="201.0" text="Miktar" />
             <TextField fx:id="miktar" layoutX="150.0" layoutY="197.0" />
+            <Label layoutX="300.0" layoutY="201.0" text="TL" />
          </children>
       </AnchorPane>
    </children>

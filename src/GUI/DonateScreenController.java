@@ -30,15 +30,14 @@ public class DonateScreenController {
 	private TextField bagisTip;
 
 	public void bagisClick() throws Exception {
-		ArrayList<String> datas = new ArrayList<String>();
-		datas.add(miktar.getText());
-		datas.add(bagisTip.getText());
-		datas.add(""+User.current_id);
-		MySqlHelper.sqlInsert("donations", "donate_amount, donate_type, user_id", 3, datas);
 		
-		Parent root = (Parent) FXMLLoader.load(getClass().getResource("DonorScreen.fxml"));
+		Donations.currentDonate.add(miktar.getText());
+		Donations.currentDonate.add(bagisTip.getText());
+		Donations.currentDonate.add(""+User.current_id);
+		
+		Parent root = (Parent) FXMLLoader.load(getClass().getResource("DonateConfirmationScreen.fxml"));
 		Stage window = (Stage) bagis.getScene().getWindow();
-		window.setScene(new Scene(root, 500, 300));
+		window.setScene(new Scene(root, 300, 200));
 	}
 	
 	public void menuClick() throws Exception {
