@@ -12,6 +12,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class AdminScreenController {
@@ -26,6 +27,12 @@ public class AdminScreenController {
 	private Button yardim;
 	@FXML
 	private Label label;
+	@FXML
+	private TextField donor;
+	@FXML
+	private TextField inNeed;
+	@FXML
+	private TextField admin;
 	
 	public void bagisClick() throws Exception {
 		Parent root = (Parent) FXMLLoader.load(getClass().getResource("DonationsScreen.fxml"));
@@ -47,7 +54,31 @@ public class AdminScreenController {
 	
 	public void labelText() throws SQLException {
 		ArrayList<String> isimler = MySqlHelper.sqlPull("users", "user_name");
+		ArrayList<String> tipler = MySqlHelper.sqlPull("users", "user_type_id");
+		if(label.getText()=="")
 		label.setText(isimler.get(User.current_id-1));
+		int donors=0;
+		int inNeeds=0;
+		int admins=0;
+		if(admin.getText().equals(" ")) {
+		for(int i=0;i<tipler.size();i++) {
+
+			if(tipler.get(i).equals("1")) {
+				admins++;
+			}
+			if(tipler.get(i).equals("2")) {
+				donors++;
+			}
+			if(tipler.get(i).equals("3")) {
+				inNeeds++;
+			}
+			
+		}
+		donor.setText(""+donors);
+		admin.setText(""+admins);
+		inNeed.setText(""+inNeeds);
+		}
+		
 	}
 	
 	

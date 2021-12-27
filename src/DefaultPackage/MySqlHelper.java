@@ -60,6 +60,23 @@ public class MySqlHelper {
 		System.out.println("Error Code: " + e.getErrorCode());
 	}
 
+	public static void sqlStatusUpdate(String table, String result, String request_id, String user_id) throws SQLException{
+		
+		PreparedStatement statement = null;
+		try {
+		String sql = "UPDATE bagis_sistemi." + table + " SET request_status = '" + 
+		result + "' Where (request_id = " + request_id + " ) and (user_id = " + user_id + " );";
+		statement = getPreparedStatement(sql);
+		statement.executeUpdate();		
+		} catch (SQLException e) {
+			showError(e);
+		}
+		finally {
+			statement.close();
+			getConnection().close();
+		}
+	}
+	
 	
 	
 	public static void sqlInsert(String table, String tableColumnsName,int howManyData,ArrayList<String> getTextFields) throws SQLException{

@@ -28,10 +28,21 @@ public class DonationPoolScreenController {
 	
 	public void labelText() throws SQLException {
 		ArrayList<String> bagislar = MySqlHelper.sqlPull("donations", "donate_amount");
+		ArrayList<String> istekler = MySqlHelper.sqlPull("requests", "request_status");
+		ArrayList<String> istekMiktar = MySqlHelper.sqlPull("requests", "request_amount");
 		double donation_pool=0;
 		for(int i=0;i<bagislar.size();i++) {
 			donation_pool+=Double.parseDouble(bagislar.get(i));
 		}
+		
+		for(int i=0;i<istekler.size();i++) {
+			if(istekler.get(i).equals("Beklemede")) {
+				donation_pool-=Double.parseDouble(istekMiktar.get(i));
+			}
+		}
+		
+		
+		
 		label.setText("" + donation_pool);
 	}
 	
