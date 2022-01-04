@@ -36,7 +36,7 @@ public class DonationPoolScreenController {
 		}
 		
 		for(int i=0;i<istekler.size();i++) {
-			if(istekler.get(i).equals("Beklemede")) {
+			if(istekler.get(i).equals("Kabul Edildi")) {
 				donation_pool-=Double.parseDouble(istekMiktar.get(i));
 			}
 		}

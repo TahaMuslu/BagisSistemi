@@ -44,4 +44,9 @@ public class InNeedScreenController {
 		label.setText(isimler.get(User.current_id-1));
 	}
 
+	public void yardimGorClick() throws IOException {
+		Parent root = (Parent) FXMLLoader.load(getClass().getResource("InNeedRequestsScreen.fxml"));
+		Stage window = (Stage) cikis.getScene().getWindow();
+		window.setScene(new Scene(root, 500, 400));
+	}
 }

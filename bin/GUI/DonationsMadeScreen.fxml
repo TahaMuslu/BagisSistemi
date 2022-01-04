@@ -2,13 +2,14 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.DonationsMadeScreenController">
    <children>
-      <AnchorPane onMouseEntered="#listview" onMouseExited="#listview" prefHeight="300.0" prefWidth="400.0">
+      <AnchorPane onMouseEntered="#tableView" onMouseExited="#tableView" onMouseMoved="#tableView" onMousePressed="#tableView" prefHeight="300.0" prefWidth="400.0">
          <children>
             <Label layoutX="144.0" layoutY="14.0" text="Yapılan Bağışlar">
                <font>
@@ -16,12 +17,16 @@
                </font>
             </Label>
             <Button fx:id="menu" layoutX="146.0" layoutY="247.0" mnemonicParsing="false" onMouseClicked="#menuClick" text="Ana Menüye Dön" />
-            <ListView fx:id="listView1" depthTest="DISABLE" layoutX="33.0" layoutY="73.0" prefHeight="166.0" prefWidth="110.0" />
-            <ListView fx:id="listView2" layoutX="144.0" layoutY="73.0" prefHeight="166.0" prefWidth="110.0" />
-            <ListView fx:id="listView3" layoutX="254.0" layoutY="73.0" prefHeight="166.0" prefWidth="110.0" />
-            <Label layoutX="67.0" layoutY="47.0" text="Bağış Id" />
-            <Label layoutX="166.0" layoutY="47.0" text="Bağış miktarı" />
-            <Label layoutX="285.0" layoutY="47.0" text="Bağış tipi" />
+            <TableView fx:id="tablo" layoutX="41.0" layoutY="40.0" prefHeight="200.0" prefWidth="326.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="75.0" text="Bağış İd" />
+                <TableColumn fx:id="tip" prefWidth="75.0" text="Bağış Tipi" />
+                  <TableColumn fx:id="miktar" prefWidth="75.0" text="Bağış Miktar" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
          </children>
       </AnchorPane>
    </children>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.InNeedRequestsScreenController">
+   <children>
+      <AnchorPane onMouseDragged="#tableView" onMouseEntered="#tableView" onMouseExited="#tableView" onMouseMoved="#tableView" onMousePressed="#tableView" prefHeight="400.0" prefWidth="500.0">
+         <children>
+            <TableView fx:id="tablo" layoutX="40.0" layoutY="78.0" prefHeight="231.0" prefWidth="420.0">
+              <columns>
+                <TableColumn fx:id="id" editable="false" prefWidth="61.5999755859375" text="İstek İd" />
+                <TableColumn fx:id="tarih" prefWidth="132.79999542236328" text="İstek Tarihi" />
+                  <TableColumn fx:id="durum" prefWidth="124.0" text="İstek Durumu" />
+                  <TableColumn fx:id="miktar" prefWidth="99.20001220703125" text="İstek Miktarı" />
+              </columns>
+            </TableView>
+            <Button layoutX="401.0" layoutY="345.0" mnemonicParsing="false" onMouseClicked="#menuClick" text="Ana Menü" />
+            <Label layoutX="161.0" layoutY="26.0" text="Yapılan Yardım istekleri">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

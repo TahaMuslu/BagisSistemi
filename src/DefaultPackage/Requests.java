@@ -20,6 +20,14 @@ public class Requests {
 	
 	
 
+	public Requests(int requestId, String requestDate, String requestStatus, double requestAmount) {
+		super();
+		this.requestId = requestId;
+		this.requestDate = requestDate;
+		this.requestStatus = requestStatus;
+		this.requestAmount = requestAmount;
+	}
+
 	public Requests(int requestId, String requestDate, double requestAmount) {
 		super();
 		this.requestId = requestId;

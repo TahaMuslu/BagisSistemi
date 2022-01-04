@@ -60,6 +60,7 @@ public class MySqlHelper {
 		System.out.println("Error Code: " + e.getErrorCode());
 	}
 
+	
 	public static void sqlStatusUpdate(String table, String result, String request_id, String user_id) throws SQLException{
 		
 		PreparedStatement statement = null;

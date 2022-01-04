@@ -13,6 +13,12 @@ public class Donations {
 	
 	
 	
+	public Donations(int donate_id, String donationType, double donateAmount) {
+		super();
+		this.donate_id = donate_id;
+		this.donationType = donationType;
+		this.donateAmount = donateAmount;
+	}
 	public Donations(int donate_id, int user_id, double donateAmount, String donationType) {
 		super();
 		this.donate_id = donate_id;

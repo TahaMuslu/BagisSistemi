@@ -19,8 +19,9 @@
                   <Font name="System Bold" size="16.0" />
                </font>
             </Label>
-            <Button fx:id="yardim" layoutX="186.0" layoutY="137.0" mnemonicParsing="false" onMouseClicked="#yardimClick" text="Yardım İsteği Oluştur" />
+            <Button fx:id="yardim" layoutX="287.0" layoutY="137.0" mnemonicParsing="false" onMouseClicked="#yardimClick" text="Yardım İsteği Oluştur" />
             <Button fx:id="cikis" layoutX="422.0" layoutY="250.0" mnemonicParsing="false" onMouseClicked="#cikisYap" text="Çıkış Yap" />
+            <Button layoutX="86.0" layoutY="137.0" mnemonicParsing="false" onMouseClicked="#yardimGorClick" text="Yardımlari Görüntüle" />
          </children>
       </AnchorPane>
    </children>
