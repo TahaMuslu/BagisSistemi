@@ -7,7 +7,7 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.fxml.FXMLLoader;
 
-// Author: Taha Yasin Muslu
+// Author: ***  Taha Yasin Muslu  ***
 
 public class Main extends Application {
 	@Override
