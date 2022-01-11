@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.DonorAddCardScreenController">
+   <children>
+      <AnchorPane prefHeight="250.0" prefWidth="400.0">
+         <children>
+            <Label layoutX="158.0" layoutY="14.0" text="Kart Ekleme">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="69.0" text="Kart Numarası" />
+            <Label layoutX="35.0" layoutY="149.0" text="CVV" />
+            <Label layoutX="35.0" layoutY="109.0" text="Son Kullanma Tarihi" />
+            <TextField fx:id="kartNumara" layoutX="150.0" layoutY="65.0" prefHeight="26.0" prefWidth="138.0" promptText="Örn: 5170************" />
+            <TextField fx:id="sonAy" layoutX="150.0" layoutY="105.0" prefHeight="26.0" prefWidth="56.0" promptText="Örn: 03" />
+            <TextField fx:id="cvc" layoutX="150.0" layoutY="145.0" prefHeight="26.0" prefWidth="138.0" promptText="Örn: 642" />
+            <Button fx:id="kartEkle" layoutX="184.0" layoutY="184.0" mnemonicParsing="false" onMouseClicked="#kartEkleClick" text="Kart Ekle" />
+            <Button fx:id="menu" layoutX="280.0" layoutY="210.0" mnemonicParsing="false" onMouseClicked="#menuClick" text="Ana Menüye Dön" />
+            <TextField fx:id="sonYil" layoutX="232.0" layoutY="105.0" prefHeight="26.0" prefWidth="56.0" promptText="Örn: 27" />
+            <Label layoutX="216.0" layoutY="105.0" text="/">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
