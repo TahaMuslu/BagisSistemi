@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Anchor_Pane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.InNeedScreenController">
+   <children>
+      <AnchorPane prefHeight="300.0" prefWidth="500.0">
+         <children>
+            <Label layoutX="213.0" layoutY="26.0" text="İyi Günler">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="label" alignment="CENTER" layoutX="85.0" layoutY="52.0" prefHeight="26.0" prefWidth="329.0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="yardim" layoutX="287.0" layoutY="137.0" mnemonicParsing="false" onMouseClicked="#yardimClick" text="Yardım İsteği Oluştur" />
+            <Button fx:id="cikis" layoutX="422.0" layoutY="250.0" mnemonicParsing="false" onMouseClicked="#cikisYap" text="Çıkış Yap" />
+            <Button layoutX="86.0" layoutY="137.0" mnemonicParsing="false" onMouseClicked="#yardimGorClick" text="Yardımlari Görüntüle" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
